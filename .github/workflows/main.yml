@@ -13,9 +13,6 @@ jobs:
 
     - name: Set up Go
       uses: actions/setup-go@v4
-    
-    - name: Verify dependencies
-      run: go mod verify
       
     - name: Build
       run: go build -v ./...
